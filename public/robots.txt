@@ -5,5 +5,5 @@ Allow: /
 Disallow: /api/
 
 # Sitemap location
-Sitemap: https://reddysantoshkumar.dev/sitemap.xml
+Sitemap: https://reskcore.vercel.app/sitemap.xml
 Sitemap: /sitemap.xml

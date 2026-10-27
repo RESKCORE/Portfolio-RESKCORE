@@ -1,5 +1,7 @@
 import { useEffect } from 'react';
 
+const SITE_URL = 'https://reskcore.vercel.app';
+
 interface SEOProps {
   title: string;
   description: string;
@@ -30,15 +32,20 @@ export function SEO({ title, description, canonicalPath = '', keywords }: SEOPro
     }
 
     // 3. Open Graph Tags
+    const normalizedPath = canonicalPath ? (canonicalPath.startsWith('/') ? canonicalPath : `/${canonicalPath}`) : '/';
+    const fullCanonicalUrl = normalizedPath === '/' ? `${SITE_URL}/` : `${SITE_URL}${normalizedPath}`;
+
     setMetaTag('property', 'og:title', title);
     setMetaTag('property', 'og:description', description);
+    setMetaTag('property', 'og:url', fullCanonicalUrl);
+    setMetaTag('property', 'og:image', `${SITE_URL}/profile.png`);
 
     // 4. Twitter Tags
     setMetaTag('name', 'twitter:title', title);
     setMetaTag('name', 'twitter:description', description);
+    setMetaTag('name', 'twitter:image', `${SITE_URL}/profile.png`);
 
     // 5. Canonical Link
-    const fullCanonicalUrl = window.location.origin + canonicalPath;
     let canonical = document.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;
     if (!canonical) {
       canonical = document.createElement('link');
