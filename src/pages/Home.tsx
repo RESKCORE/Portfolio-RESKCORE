@@ -1,9 +1,20 @@
 import { AnimatedCopy } from '@/components/AnimatedCopy';
 import { FluidSimulation } from '@/components/FluidSimulation';
+import { SEO } from '@/components/SEO';
 
 export function Home() {
   return (
     <main className="relative w-full h-[100vh] overflow-hidden bg-[var(--bg)] text-[var(--fg)]">
+      <SEO 
+        title="Reddy Santosh Kumar (Santosh Reddy) | Full Stack Developer & AI/ML Engineer"
+        description="Official portfolio of Reddy Santosh Kumar (also known as Santosh Reddy / Santosh Kumar) — Full Stack Developer & AI/ML Engineer building intelligent applications, multi-agent AI systems, and real-time dashboards."
+        canonicalPath="/"
+        keywords="Santosh Kumar, Reddy Santosh Kumar, santosh reddy, Reddy Santosh, Santosh Kumar Reddy, RESK, RESKCORE, Full Stack Developer, AI ML Engineer, Machine Learning, Portfolio"
+      />
+
+      {/* Semantic Accessible Heading for Search Engines & Screen Readers */}
+      <h2 className="sr-only">Reddy Santosh Kumar (Santosh Reddy / Santosh Kumar) — Full Stack Developer &amp; AI/ML Engineer Portfolio</h2>
+
       {/* Background Video */}
       <video 
         autoPlay 
@@ -42,7 +53,7 @@ export function Home() {
         <div className="container flex justify-between items-end">
           <div className="flex flex-col gap-1 text-left opacity-75">
             <AnimatedCopy variant="flicker" onScroll={false} delay={1} as="p" className="type-mono text-[10px] sm:text-[11px] whitespace-nowrap">
-              Reddy Santosh Kumar
+              Reddy Santosh Kumar (Santosh Reddy)
             </AnimatedCopy>
             <AnimatedCopy variant="flicker" onScroll={false} delay={1} as="p" className="type-mono text-[10px] sm:text-[11px] whitespace-nowrap">
               [ Portfolio — 2026 ]

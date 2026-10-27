@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { AnimatedCopy } from '@/components/AnimatedCopy';
+import { SEO } from '@/components/SEO';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import { Mail, Github, Linkedin, Instagram, Copy, Check, Send, Loader2, AlertCircle } from 'lucide-react';
@@ -123,6 +124,13 @@ export function Contact() {
 
   return (
     <main className="bg-[var(--bg)] text-[var(--fg)] min-h-screen pt-24 sm:pt-32 pb-32 sm:pb-48">
+      <SEO 
+        title="Contact Reddy Santosh Kumar (Santosh Reddy) | Portfolio"
+        description="Get in touch with Reddy Santosh Kumar (also known as Santosh Reddy or Santosh Kumar), Full Stack Developer & AI/ML Engineer for engineering collaborations and opportunities."
+        canonicalPath="/contact"
+        keywords="Contact Santosh Kumar, Reddy Santosh Kumar contact, Santosh Reddy email, hire AI ML Engineer, hire full stack developer"
+      />
+
       {/* 1. Contact Hero */}
       <section className="min-h-[45vh] sm:min-h-[55vh] flex flex-col justify-center container relative border-b border-[var(--fg)]/15 pb-10 sm:pb-16">
         <div className="flex items-center gap-2 mb-4">
@@ -140,7 +148,7 @@ export function Contact() {
           Connect
         </AnimatedCopy>
         <p className="type-var-2 text-xl sm:text-2xl md:text-3xl max-w-3xl mt-6 sm:mt-10 leading-relaxed opacity-90 font-serif italic">
-          Have an idea, a project, or a role in mind? Send me a direct message below or reach out on any channel.
+          Have an idea, a project, or a role in mind? Reach out to Reddy Santosh Kumar (Santosh Reddy) directly below or across any channel.
         </p>
       </section>
 

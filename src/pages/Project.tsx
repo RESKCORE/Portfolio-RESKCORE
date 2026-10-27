@@ -1,10 +1,18 @@
 import { Link } from 'react-router-dom';
 import { AnimatedCopy } from '@/components/AnimatedCopy';
+import { SEO } from '@/components/SEO';
 import { ArrowLeft, ArrowUpRight, CheckCircle2, ShieldCheck, Zap } from 'lucide-react';
 
 export function Project() {
   return (
     <main className="bg-[var(--bg)] text-[var(--fg)] min-h-screen pt-24 sm:pt-32 pb-32 sm:pb-48">
+      <SEO 
+        title="AgentPal AI Case Study | Reddy Santosh Kumar (Santosh Reddy)"
+        description="Deep dive into AgentPal: an autonomous bilateral AI negotiation platform with a deterministic settlement kernel and automated PayPal invoicing, engineered by Reddy Santosh Kumar (Santosh Reddy / Santosh Kumar)."
+        canonicalPath="/project"
+        keywords="AgentPal, AI Agents, Negotiation Kernel, Reddy Santosh Kumar, Santosh Reddy, Santosh Kumar, FinTech AI, Full Stack Developer"
+      />
+
       {/* 1. Project Hero Header */}
       <section className="container mb-8 sm:mb-12">
         <div className="flex items-center justify-between border-b border-[var(--fg)]/20 pb-4 mb-6 sm:mb-8">

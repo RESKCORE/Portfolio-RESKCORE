@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { AnimatedCopy } from '@/components/AnimatedCopy';
+import { SEO } from '@/components/SEO';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import { ArrowUpRight } from 'lucide-react';
@@ -242,6 +243,13 @@ export function Work() {
 
   return (
     <main className="bg-[var(--bg)] text-[var(--fg)] min-h-screen pt-24 sm:pt-32 pb-32 sm:pb-48">
+      <SEO 
+        title="Selected Works & AI Systems | Reddy Santosh Kumar (Santosh Reddy)"
+        description="Production-grade AI systems, full-stack architectures, and machine learning platforms engineered by Reddy Santosh Kumar (Santosh Reddy / Santosh Kumar)."
+        canonicalPath="/work"
+        keywords="Santosh Kumar projects, Reddy Santosh Kumar work, santosh reddy portfolio, AgentPal, KLAROS, KRUZZ, Kriora, Nexus, AI ML Engineer"
+      />
+
       {/* Page Title Section */}
       <section className="container mb-12 sm:mb-20">
         <div className="flex flex-col items-center justify-center text-center py-8 sm:py-16">
@@ -254,7 +262,7 @@ export function Work() {
             Selected Works
           </AnimatedCopy>
           <p className="type-var-2 text-lg sm:text-2xl mt-4 max-w-xl opacity-80 font-serif italic">
-            Production-grade AI systems, full-stack architectures & interactive platforms.
+            Production-grade AI systems, full-stack architectures & interactive platforms by Reddy Santosh Kumar (Santosh Reddy).
           </p>
         </div>
 

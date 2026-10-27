@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Disallow build and private assets if any
+Disallow: /api/
+
+# Sitemap location
+Sitemap: https://reddysantoshkumar.dev/sitemap.xml
+Sitemap: /sitemap.xml

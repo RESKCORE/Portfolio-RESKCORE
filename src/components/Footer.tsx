@@ -17,14 +17,14 @@ export function Footer() {
               <Link to="/contact" className="type-var-2 text-2xl sm:text-3xl hover:opacity-70 transition-opacity">Contact</Link>
             </div>
             <div className="flex flex-col gap-3">
-              <a href="https://github.com/RESKCORE" target="_blank" rel="noopener noreferrer" className="type-mono hover:opacity-70 transition-opacity text-[10px] sm:text-[11px]">GitHub</a>
-              <a href="https://linkedin.com/in/[username]" target="_blank" rel="noopener noreferrer" className="type-mono hover:opacity-70 transition-opacity text-[10px] sm:text-[11px]">LinkedIn</a>
-              <a href="https://instagram.com/[username]" target="_blank" rel="noopener noreferrer" className="type-mono hover:opacity-70 transition-opacity text-[10px] sm:text-[11px]">Instagram</a>
+              <a href="https://github.com/RESKCORE" target="_blank" rel="noopener noreferrer" className="type-mono hover:opacity-70 transition-opacity text-[10px] sm:text-[11px]">GitHub (@RESKCORE)</a>
+              <a href="https://www.linkedin.com/in/reddy-santosh-kumar/" target="_blank" rel="noopener noreferrer" className="type-mono hover:opacity-70 transition-opacity text-[10px] sm:text-[11px]">LinkedIn (Reddy Santosh Kumar)</a>
+              <a href="https://instagram.com/klyn.am" target="_blank" rel="noopener noreferrer" className="type-mono hover:opacity-70 transition-opacity text-[10px] sm:text-[11px]">Instagram (@klyn.am)</a>
             </div>
           </div>
         </div>
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end gap-3 sm:gap-0 border-t border-[var(--fg)]/15 pt-6 sm:pt-8">
-          <p className="type-mono text-[var(--fg)] opacity-50 text-[10px] sm:text-[11px]">Full Stack & AI/ML</p>
+          <p className="type-mono text-[var(--fg)] opacity-50 text-[10px] sm:text-[11px]">Reddy Santosh Kumar (Santosh Reddy) // Full Stack &amp; AI/ML</p>
           <p className="type-mono text-[var(--fg)] opacity-50 text-[10px] sm:text-[11px]">[ RESK — 2026 ]</p>
         </div>
       </div>

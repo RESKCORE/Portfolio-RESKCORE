@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { AnimatedCopy } from '@/components/AnimatedCopy';
 import { Skiper88 } from '@/components/ui/skiper88';
+import { SEO } from '@/components/SEO';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 
@@ -145,6 +146,13 @@ export function Lab() {
 
   return (
     <main className="bg-[var(--bg)] text-[var(--fg)] min-h-screen">
+      <SEO 
+        title="About Reddy Santosh Kumar (Santosh Kumar) | AI/ML & Engineering"
+        description="About Reddy Santosh Kumar (also known as Santosh Reddy or Santosh Kumar) — Full Stack Developer & AI/ML Engineer with 1+ year building production-grade ML systems and real-time platforms."
+        canonicalPath="/lab"
+        keywords="Santosh Kumar, Reddy Santosh Kumar, santosh reddy, Reddy Santosh, About Santosh Kumar, AI ML Engineer Vijayawada"
+      />
+
       {/* 1. About Hero */}
       <section className="relative h-screen w-full flex flex-col justify-center items-center overflow-hidden px-4">
         <canvas ref={canvasRef} className="absolute inset-0 w-full h-full pointer-events-none" />
@@ -152,14 +160,14 @@ export function Lab() {
           About
         </AnimatedCopy>
         <AnimatedCopy variant="slide" onScroll={false} delay={0.5} as="p" className="z-10 mt-4 text-[var(--fg)] type-var-2 italic text-lg sm:text-xl md:text-2xl text-center max-w-xl">
-          AI/ML & Full Stack Engineering
+          Reddy Santosh Kumar // AI/ML & Full Stack
         </AnimatedCopy>
       </section>
 
       {/* 2. About Bio */}
       <section className="container py-12 sm:py-16 md:py-24 grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-10 md:gap-16 text-[var(--fg)]">
         <AnimatedCopy variant="slide" type="lines" onScroll={true} as="h3" className="type-var-2 text-lg sm:text-2xl md:text-3xl lg:text-4xl leading-[1.4] sm:leading-[1.3] tracking-tight">
-          I'm an AI/ML engineer and full stack developer with 1+ year of experience building production-grade ML systems, LLM-powered apps and real-time dashboards.
+          I'm Reddy Santosh Kumar (also known as Santosh Reddy or Santosh Kumar), an AI/ML engineer and full stack developer with 1+ year of experience building production-grade ML systems, LLM-powered apps and real-time dashboards.
         </AnimatedCopy>
         <AnimatedCopy variant="slide" type="lines" onScroll={true} delay={0.2} as="h3" className="type-var-2 text-lg sm:text-2xl md:text-3xl lg:text-4xl leading-[1.4] sm:leading-[1.3] tracking-tight">
           I've shipped 8+ end-to-end projects, from decision intelligence to quantum-classical hybrid models and computer vision, reaching 94–98% accuracy and 40% gains in operational efficiency.
